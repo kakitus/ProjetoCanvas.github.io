@@ -1,0 +1,456 @@
+@font-face{
+    font-family: Poppins;
+    src: url("../fonts/Poppins-Medium.ttf");
+}
+
+
+/* Estilo Geral */
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+li {
+    margin-top: 20px;
+    box-shadow: 5px 5px 10px rgb(255, 255, 255);
+    background: #ffffffde;
+    color: #ffffff;
+    border-radius: 15px;
+    height: 100%;
+    
+  }
+
+
+h3{
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif; 
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    
+    background-image: url(../imagem/846724.jpg);
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.container {
+    margin: 15px 4%;
+    padding: 15px;
+}
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+     }
+     
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header {
+    padding: 10px 2%;
+}
+
+
+.logo {
+    width: 260px;
+}
+
+.interface{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header a{
+    color: rgb(11, 102, 187);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color:rgb(0, 0, 0);
+    transform: scale(1.09);
+}
+
+/* Estilo do grid principal */
+
+
+section img{
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.555);
+
+}
+
+.container{
+
+    margin-top: -30px;
+
+}
+
+.imgport3 > img { 
+    
+    
+    width: 100%;
+    height: 100%;
+    
+}
+
+.efect {
+   max-width: 100%;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.efect:hover {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    grid-gap: 20px;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    padding: 10px;
+    margin: 0 auto;
+    grid-gap: 20px;
+}
+
+.grid1 > div:nth-child(n+4){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    align-items: center;
+}
+
+
+/* Estilo do footer */
+.footer_pag_inicial {
+    background-color: #70889cb9;
+    padding: 0 5%;
+    box-shadow: rgba(0, 0, 0, 0.212) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    width: 90%;
+    display: flex;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.redes{
+    width: calc(100% / 3);
+}
+
+footer a{
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.5s;
+    transition: .2s;
+}
+
+footer a:hover{
+    transform: scale(1.2);
+}
+
+.redesletras{
+    font-size: larger;
+    line-height: 50px;
+    color: #ffffffb6;
+}
+
+.icons_footer, .redes {
+    display: flex;
+    justify-content: left;
+    
+    
+}
+
+.inline_item {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.copyright {
+    font-size: x-small;
+    text-align: right;
+    width: calc(100% / 3);
+    line-height: 50px;
+    color: #ffffffb9;
+}
+
+
+.topo_decoration {
+    text-decoration: none;
+    color: #040424;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);    
+    text-align: center;
+    width: calc(100% / 3);
+    line-height: 50px;
+    color: #ffffffbb;
+}
+
+.rec {
+    margin: 15px 2%;
+    padding: 7px;
+}
+
+
+/* estilo das paginas de pdfs */
+
+.container, .i-frame {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Estilo pagina grupo */
+.grupo_pag_title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 400;
+    color: white;
+    text-shadow: 10px 10px 25px #0E3775,
+    -10px 10px 25px #0E3775,
+    -10px -10px 25px #0E3775,
+    10px -10px 25px #0E3775;
+}
+
+.grupo{
+ 
+    display: flex;
+    justify-content: center;
+
+}
+
+.grupo img{
+
+    width: 809px;
+    height: 400px;
+
+}
+
+/* ESTILO DO VIDEO */
+
+.video{
+
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/* ESTILO DAS PAGINAS DE DOCUMENTAÇÃO */
+main, .container {
+    margin: 15px 4%;
+    padding: 15px;
+
+}
+.fade {
+    position: relative;
+    width: 100%;
+    min-width: 60vh;
+    top: -25px;
+    background-image: linear-gradient(0deg, transparent, black 75%);
+    z-index: 2;
+}
+  
+.star-wars {
+    margin-top: 25%;
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    perspective: 400px;
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 500%;
+    letter-spacing: 6px;
+    line-height: 150%;
+    text-align: justify;
+}
+  
+.crawl {
+    position: relative;
+    transform-origin: 100% 10%;
+    animation: crawl 40s linear;
+}
+
+.h1center{
+
+    text-align: center;
+
+}
+  
+@keyframes crawl {
+    0% {
+      top: 0;
+  
+      transform: rotateX(20deg) translateZ(0);
+    }
+  
+    100% {
+      top: -6000px;
+  
+      transform: rotateX(24deg) translateZ(-2500px);
+    }
+}
+
+.stars {
+
+font-size: 50%;
+
+}
+  
+
+/* Estilo da Resposividade */
+ @media screen and (max-width: 600px){
+
+    .interface{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid2{
+        grid-template-columns: 1fr;
+
+    }
+
+    .imgport3 > img { 
+        width: 350px;
+        height: 200px;
+        
+    }
+
+    .container  {
+        margin: 15px auto;
+        padding: 15px;
+        width: 550px;
+        height: 800px;
+    }
+
+    .footer_pag_inicial {
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .interface {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        width:150px;
+    }
+
+    header nav ul {
+        text-align: center; /* Centralize os itens do menu */
+        padding-top: 10px; /* Adicione algum espaçamento acima do menu */
+    }
+
+    header nav ul li {
+        display: block;
+        padding: 10px 0; /* Adicione algum espaçamento entre os itens do menu */
+        font-size: 10px;
+    }
+
+    .grid, .grid2, .grid1 > div:nth-child(n+4) {
+        grid-template-columns: 1fr; /* Uma coluna para itens na grade */
+        grid-gap: 10px; /* Adicione algum espaçamento entre os itens da grade */
+    }
+
+    .imgport3 > img {
+        width: 100%; /* Faça as imagens ocuparem a largura total */
+        height: auto; /* Permita que a altura seja ajustada proporcionalmente */
+    }
+
+    .container {
+        margin: 15px auto;
+        padding: 15px;
+        width: 90%; /* Use uma largura maior para ocupar a largura disponível */
+    }
+
+    .footer_pag_inicial {
+        flex-direction: column;
+        align-items: center; /* Centralize os itens do rodapé */
+    }
+
+    .redes {
+        width: 100%; /* Faça os ícones de rede social ocuparem a largura total */
+        text-align: center; /* Centralize os ícones de rede social */
+        margin-bottom: 10px; /* Adicione algum espaçamento abaixo dos ícones de rede social */
+    }
+
+    .copyright,
+    .topo_decoration,
+    .redesletras {
+        width: 100%; /* Faça os elementos ocuparem a largura total */
+        text-align: center; /* Centralize os elementos */
+        line-height: 30px; /* Ajuste a altura da linha para melhor espaçamento */
+    }
+
+    .topo_decoration {
+        margin-top: 10px; /* Adicione algum espaçamento acima do link de topo */
+    }
+
+    .grupo img {
+        width: 100%; /* Faça as imagens do grupo ocuparem a largura total */
+        height: auto; /* Permita que a altura seja ajustada proporcionalmente */
+    }
+
+    .video {
+        position: static; /* Remova a posição absoluta para que o vídeo flua normalmente */
+        transform: none; /* Remova a transformação para a posição absoluta */
+    }
+
+}
